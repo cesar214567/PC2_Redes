@@ -152,9 +152,9 @@ def run():
                 line_count += 1
             else:
                 line_count += 1
-                denyflow2 = denyflow
+                denyflow = flow3
                 denyflow["dst-ip"]=row[1]
-                pusher.set(denyflow2,4)
+                pusher.set(denyflow,4) 
     
     CLI(net)
     net.stop()
